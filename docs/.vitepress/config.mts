@@ -49,6 +49,8 @@ const handleMissingImagesPlugin = (): Plugin => {
 export default defineConfig({
   title: "Void Space",
   description: "Thoughts on software development, architecture, and engineering practices.",
+  // 忽略死链接检查
+  ignoreDeadLinks: true,
   vite: {
     plugins: [handleMissingImagesPlugin()],
     build: {

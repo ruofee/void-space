@@ -38,7 +38,7 @@ npx husky-init && npm install
 
 package.json 发生了变动，新增了 husky 依赖，以及一段 prepare 脚本：
 
-```base
+```diff
 +  "devDependencies": {
 +    "husky": "^8.0.2"
 +  },
