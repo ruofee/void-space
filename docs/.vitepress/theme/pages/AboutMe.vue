@@ -28,21 +28,6 @@ const toys = [
     link: 'https://github.com/ruofee/vue-filter-box',
   }
 ]
-
-const contacts = [
-  {
-    name: 'github',
-    link: 'https://github.com/ruofee',
-  },
-  {
-    name: 'zhihu',
-    link: 'https://www.zhihu.com/people/chen-ruo-feng-e',
-  },
-  {
-    name: 'email',
-    link: 'mailto:ruofee@126.com',
-  }
-]
 </script>
 
 <template>
@@ -51,7 +36,7 @@ const contacts = [
       <PageTitle title="关于我" />
 
       <div class="info">
-        <img class="avatar" src="https://www.ruofee.cn/imgs/headImage.png" alt="">
+        <img class="avatar" src="../assets/imgs/headImage.png" alt="">
 
         <div class="info-content">
           <div class="name">Ruofee</div>
