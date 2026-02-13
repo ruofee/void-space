@@ -269,4 +269,13 @@ const toys = [
   height: 1px;
   background-color: var(--vp-c-divider);
 }
+
+@media (max-width: 768px) {
+  .about-me {
+    .avatar {
+      display: none;
+    }
+  }
+}
+
 </style>

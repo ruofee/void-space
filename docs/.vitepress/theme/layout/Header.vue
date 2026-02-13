@@ -97,4 +97,12 @@ const activePath = computed(() => route.path)
     }
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    .header-container {
+      padding: 0 16px;
+    }
+  }
+}
 </style>

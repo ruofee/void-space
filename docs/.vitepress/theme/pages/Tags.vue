@@ -77,4 +77,22 @@ const tags = data?.tags || []
     }
   }
 }
+
+@media (max-width: 768px) {
+  .tags {
+    .tags-container {
+      max-width: 100%;
+
+      .tags-list {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+
+        .tag {
+          .count {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

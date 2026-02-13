@@ -72,6 +72,7 @@ const handleImageError = (e: Event) => {
     .title {
       font-size: 26px;
       font-weight: 500;
+      line-height: 1.5;
       color: var(--vp-c-text-1);
     }
 

@@ -50,4 +50,12 @@ const isTagDetailPage = computed(() => {
     background-color: #fff;
   }
 }
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    .content {
+      max-width: 100%;
+    }
+  }
+}
 </style>

@@ -53,4 +53,11 @@
   }
 }
 
+@media (max-width: 768px) {
+  .footer {
+    .footer-container {
+      padding: 0 16px;
+    }
+  }
+}
 </style>

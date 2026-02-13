@@ -84,4 +84,20 @@ const article = computed(() => {
     .article-content {}
   }
 }
+
+@media (max-width: 768px) {
+  .article {
+    .article-container {
+      max-width: 100%;
+      // .article-header {
+      //   .title {
+      //     font-size: 24px;
+      //   }
+      // }
+      .banner {
+        width: 100%;
+      }
+    }
+  }
+}
 </style>
