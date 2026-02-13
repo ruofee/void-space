@@ -32,6 +32,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 24px;
     width: 100%;
     max-width: 1200px;
 
@@ -49,14 +50,6 @@
         width: 20px;
         height: 20px;
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    .footer-container {
-      padding: 0 24px;
     }
   }
 }

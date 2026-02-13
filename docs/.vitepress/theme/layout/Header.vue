@@ -55,6 +55,7 @@ const activePath = computed(() => route.path)
     align-items: center;
     width: 100%;
     max-width: 1200px;
+    padding: 0 24px;
 
     .logo {
       display: flex;
@@ -94,14 +95,6 @@ const activePath = computed(() => route.path)
           font-weight: 600;
         }
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    .header-container {
-      padding: 0 24px;
     }
   }
 }
