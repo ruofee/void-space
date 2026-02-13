@@ -8,7 +8,11 @@
 
       <div class="footer-right">
         <a href="https://github.com/ruofee" target="_blank">
-          <img class="github-icon" src="../assets/icons/github.svg" alt="github" />
+          <img class="icon" src="../assets/icons/github.svg" alt="github" />
+        </a>
+
+        <a href="https://www.zhihu.com/people/chen-ruo-feng-e" target="_blank">
+          <img class="icon" src="../assets/icons/zhihu.svg" alt="zhihu" />
         </a>
       </div>
     </div>
@@ -38,10 +42,11 @@
     .footer-right {
       display: flex;
       align-items: center;
+      gap: 20px;
 
-      .github-icon {
-        width: 24px;
-        height: 24px;
+      .icon {
+        width: 20px;
+        height: 20px;
       }
     }
   }

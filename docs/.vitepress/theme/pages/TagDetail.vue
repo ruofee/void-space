@@ -68,7 +68,6 @@ const articles = computed(() => {
 .tag-articles-container {
   width: 100%;
   max-width: 800px;
-  padding-bottom: 120px;
 }
 
 .empty {

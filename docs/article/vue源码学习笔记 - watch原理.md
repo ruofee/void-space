@@ -1,7 +1,9 @@
 ---
 title: "vue源码学习笔记 - watch原理"
-date: 2021/02/26 00:00:00
-banner: /imgs/vue
+date: 2021/02/26
+banner: /imgs/banner/banner13.png
+description: 深入 Vue 2.6 源码,剖析 watch 侦听器的实现原理。从 initWatch 到 Watcher 类,详细解析依赖收集、响应式触发、深度监听和回调执行的完整流程。
+tags: Vue,源码分析
 ---
 
 ## 🤔 介绍

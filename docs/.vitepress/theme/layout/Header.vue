@@ -1,4 +1,16 @@
 <script lang="ts" setup>
+import { useRoute } from 'vitepress'
+import { computed } from 'vue'
+
+const route = useRoute()
+
+const navLinks = [
+  { text: '文章', href: '/', match: (path: string) => path === '/' || path.startsWith('/article/') },
+  { text: '分类', href: '/tags', match: (path: string) => path.startsWith('/tags') },
+  { text: '关于我', href: '/about', match: (path: string) => path.startsWith('/about') },
+]
+
+const activePath = computed(() => route.path)
 </script>
 
 <template>
@@ -10,9 +22,14 @@
       </a>
 
       <div class="links">
-        <a href="/" class="link">文章</a>
-        <a href="/tags" class="link">分类</a>
-        <a href="/about" class="link">关于我</a>
+        <a
+          v-for="link in navLinks"
+          :key="link.href"
+          :href="link.href"
+          :class="['link', { active: link.match(activePath) }]"
+        >
+          {{ link.text }}
+        </a>
       </div>
     </div>
   </div>
@@ -64,12 +81,17 @@
       .link {
         font-size: 14px;
         font-weight: 500;
-        color: var(--vp-c-text-1);
+        color: var(--vp-c-text-2);
         text-decoration: none;
         transition: color 0.3s ease;
 
         &:hover {
           color: var(--vp-c-brand-1);
+        }
+
+        &.active {
+          color: var(--vp-c-brand-1);
+          font-weight: 600;
         }
       }
     }

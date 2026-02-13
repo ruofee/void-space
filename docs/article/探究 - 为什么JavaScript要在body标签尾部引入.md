@@ -1,7 +1,9 @@
 ---
 title: "探究: 为什么JavaScript要在body标签尾部引入?"
 date: 2020/10/23
-banner: /imgs/code
+banner: /imgs/banner/banner8.png
+description: 通过 Chrome Performance 工具实验验证 JavaScript 引入位置对页面渲染的影响。揭示外部 JS 文件下载会阻塞 HTML 解析但不阻塞渲染,解释为何应将 script 标签置于 body 尾部。
+tags: JavaScript,浏览器,性能优化,HTML,用户体验
 ---
 
 ## 🍁 故事起因

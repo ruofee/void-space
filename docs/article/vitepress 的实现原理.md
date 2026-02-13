@@ -1,7 +1,9 @@
 ---
 title: "vitepress 的实现原理"
-date: 2023/2/1 19:30:00
-banner: /imgs/vue
+date: 2023/2/1
+banner: /imgs/banner/banner15.png
+description: 深度解析 Vitepress 静态站点生成器的工作原理,从初始化、启动服务到 Markdown 渲染的完整流程。揭示 Vite 插件如何动态生成 HTML 入口,以及 markdown-it 如何将 MD 转换为 Vue 组件。
+tags: Vite,Vue,源码分析
 ---
 
 ## 什么是 Vitepress？

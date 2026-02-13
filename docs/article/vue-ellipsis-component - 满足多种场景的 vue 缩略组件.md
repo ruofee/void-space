@@ -1,7 +1,9 @@
 ---
 title: "vue-ellipsis-component: 满足多种场景的 vue 缩略组件"
-date: 2022/2/9 23:13:00
-banner: /imgs/vue
+date: 2022/2/9
+banner: /imgs/banner/banner17.png
+description: 从 react-ellipsis 移植而来的 Vue 文本缩略组件,支持多行缩略、最大高度缩略、富文本缩略、自适应等功能。采用二分法优化性能,提供常规策略和动态计算两种缩略方案。
+tags: Vue,开源
 ---
 
 ## vue-ellipsis-component 的诞生

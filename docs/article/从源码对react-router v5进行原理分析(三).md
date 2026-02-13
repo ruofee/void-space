@@ -1,10 +1,10 @@
 ---
 title: "从源码对react-router v5进行原理分析(三)"
-date: 2020/9/13 00:00:00
-banner: /imgs/react
+date: 2020/9/13
+banner: /imgs/banner/banner4.png
+description: 完结篇!分析 Redirect、Link、withRouter 等剩余组件的实现,以及 react-router 提供的 Hooks API。揭示高阶组件模式和 useContext 在路由组件中的巧妙应用。
+tags: React,源码分析
 ---
-
-
 
 本篇文章将对 react-router 中剩余的组件进行源码分析
 

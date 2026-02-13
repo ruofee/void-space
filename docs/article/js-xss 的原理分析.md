@@ -1,7 +1,9 @@
 ---
 title: "js-xss 原理分析"
-date: 2024/8/23 19:09:00
-banner: /imgs/wallpaper1
+date: 2024/8/23
+banner: /imgs/banner/banner19.png
+description: 从源码角度剖析 js-xss 库的 XSS 过滤原理。解析 HTML 切分、标签解析、属性解析的完整流程,以及白名单机制和安全校验的实现细节。对比正则方式,展现字符串遍历的性能优势。
+tags: 安全,源码分析,JavaScript
 ---
 
 

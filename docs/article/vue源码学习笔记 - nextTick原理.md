@@ -1,7 +1,9 @@
 ---
 title: "vue源码学习笔记 - nextTick原理"
-date: 2021/02/26 00:00:01
-banner: /imgs/vue
+date: 2021/02/26
+banner: /imgs/banner/banner12.png
+description: 解析 Vue 异步更新队列和 nextTick 的实现原理。深入理解为何 DOM 更新是异步的,以及 nextTick 如何利用微任务队列(Promise/MutationObserver)实现回调的精确时机控制。
+tags: Vue,源码分析
 ---
 
 ## ⛽ 用法

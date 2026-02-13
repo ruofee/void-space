@@ -1,10 +1,10 @@
 ---
 title: "关于我因为登录失败开始探究Cookie这档事"
-date: 2020/11/04 00:00:00
-banner: /imgs/chrome
+date: 2020/11/04
+banner: /imgs/banner/banner5.png
+description: 深入探究 Chrome 80 版本后 SameSite Cookie 默认策略变更导致的跨站登录失败问题。详细解析 Cookie 的 SameSite 属性、跨域与跨站的区别,以及三种实用的解决方案。
+tags: 浏览器,跨域,安全
 ---
-
-
 
 ## 写在前面
 

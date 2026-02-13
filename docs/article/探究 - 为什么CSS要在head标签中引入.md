@@ -1,7 +1,9 @@
 ---
 title: "探究: 为什么CSS要在head标签中引入"
-date: 2020/10/29 00:00:00
-banner: /imgs/wallpaper1
+date: 2020/10/2
+banner: /imgs/banner/banner7.png
+description: 从性能和用户体验角度探究 CSS 引入位置的最佳实践。对比 CSS 在 head 和 body 中引入的渲染流程差异,揭示避免页面"裸奔"现象和 reflow 性能损耗的原理。
+tags: CSS,浏览器,性能优化,HTML,用户体验
 ---
 
 ## 开头

@@ -74,7 +74,7 @@ const toys = [
             </a>
           </div>
           <div class="contact-item">
-            <a href="https://github.com/ruofee" target="_blank" class="contact-name">
+            <a href="https://www.zhihu.com/people/chen-ruo-feng-e" target="_blank" class="contact-name">
               <img src="../assets/icons/zhihu.svg" alt="zhihu" class="contact-icon">
             </a>
           </div>

@@ -1,7 +1,9 @@
 ---
 title: "LogGame - 藏在浏览器控制台里的汽车游戏"
 date: 2020/08/11
-banner: /imgs/code
+banner: /imgs/banner/banner18.png
+description: 一个隐藏在浏览器控制台中的创意小游戏项目。通过控制台输出实现汽车躲避游戏,展示了浏览器 Console API 的有趣玩法。支持键盘控制,完美实现上班摸鱼。
+tags: JavaScript,游戏开发,开源
 ---
 
 

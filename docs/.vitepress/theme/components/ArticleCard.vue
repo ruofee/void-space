@@ -20,13 +20,14 @@ const handleImageError = (e: Event) => {
 
 <template>
   <a :href="url" class="article_card">
-    <img 
-      v-if="props.banner" 
-      class="banner" 
-      :src="props.banner" 
-      alt=""
-      @error="handleImageError"
-    >
+    <div v-if="props.banner" class="banner-wrapper">
+      <img 
+        class="banner" 
+        :src="props.banner" 
+        alt=""
+        @error="handleImageError"
+      >
+    </div>
 
     <div class="content">
       <div class="title">{{ props.title }}</div>
@@ -46,9 +47,21 @@ const handleImageError = (e: Event) => {
   flex-direction: column;
   row-gap: 24px;
 
+  .banner-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
   .banner {
     width: 100%;
+    max-height: 450px;
     object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  &:hover .banner {
+    transform: scale(1.1);
   }
 
   .content {

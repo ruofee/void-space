@@ -9,7 +9,7 @@ const tags = data?.tags || []
 <template>
   <div class="tags">
     <div class="tags-container">
-      <PageTitle title="分类" />
+      <PageTitle title="分类" :description="`共 ${tags.length} 个分类`" />
 
       <div class="tags-list">
         <a :href="`/tags/${tag.name}`" v-for="tag in tags" :key="tag">

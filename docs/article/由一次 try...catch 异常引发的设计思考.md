@@ -1,7 +1,9 @@
 ---
 title: "由一次 try...catch 异常引发的设计思考"
 date: 2024/2/22
-banner: /imgs/code
+banner: /imgs/banner/banner11.png
+description: 探讨 try...catch 在网络请求中过度捕获错误的问题,分析 await-to-js 的优缺点,并提出一种基于错误类型枚举的优雅设计方案,实现错误处理与主流程逻辑的完美解耦。
+tags: JavaScript
 ---
 
 最近写代码遇到一个 Bug，进而引发了一些关于网络请求设计相关的思考。

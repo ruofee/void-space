@@ -41,6 +41,7 @@ const isTagDetailPage = computed(() => {
   display: flex;
   justify-content: center;
   padding-top: calc(56px + 64px);
+  padding-bottom: 120px;
 
   .content {
     padding-left: 40px;

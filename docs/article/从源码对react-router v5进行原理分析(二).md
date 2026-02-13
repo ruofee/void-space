@@ -1,10 +1,10 @@
 ---
 title: "从源码对react-router v5进行原理分析(二)"
-date: 2020/9/9 00:00:00
-banner: /imgs/react
+date: 2020/9/9
+banner: /imgs/banner/banner2.png
+description: 解析 react-router 核心组件的实现原理,包括 BrowserRouter、Router、Switch 和 Route。深入理解 Context API 在路由数据传递中的应用,以及路由匹配和组件渲染的完整流程。
+tags: React,源码分析
 ---
-
-
 
 ## 🤔 写在最前
 

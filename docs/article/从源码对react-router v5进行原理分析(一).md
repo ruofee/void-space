@@ -1,10 +1,10 @@
 ---
 title: "从源码对react-router v5进行原理分析(一)"
-date: 2020/8/31 00:00:00
-banner: /imgs/react
+date: 2020/8/31
+banner: /imgs/banner/banner3.png
+description: 深入 react-router v5 源码,分析路由跳转的实现原理。通过自行实现简易 history 库,揭示订阅-发布模式在路由管理中的应用,以及 pushState API 在 SPA 路由中的核心作用。
+tags: React,源码分析
 ---
-
-
 
 ## 😕 何为 react-router
 

@@ -31,7 +31,9 @@ const article = computed(() => {
         <ArticleTags :tags="article?.tags" />
       </div>
 
-      <img v-if="article?.banner" class="banner" :src="article?.banner" alt="" />
+      <div v-if="article?.banner" class="banner-wrapper">
+        <img class="banner" :src="article?.banner" alt="" />
+      </div>
 
       <Content class="vp-doc article-content" />
     </div>
@@ -46,7 +48,7 @@ const article = computed(() => {
   .article-container {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 36px;
     width: 100%;
     max-width: 800px;
 
@@ -62,9 +64,21 @@ const article = computed(() => {
       }
     }
 
+    .banner-wrapper {
+      width: 100%;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover .banner {
+        transform: scale(1.1);
+      }
+    }
+
     .banner {
       width: 100%;
       object-fit: cover;
+      transition: transform 0.6s ease;
     }
 
     .article-content {}

@@ -1,7 +1,9 @@
 ---
 title: "提升效率的筛选器组件 vue-filter-box"
-date: 2022/1/29 00:00:01
-banner: /imgs/vue
+date: 2022/1/29
+banner: /imgs/banner/banner10.png
+description: 基于 view-design 实现的动态筛选器组件,通过传入筛选项结构即可快速生成筛选器,大幅提升中台系统的开发效率。支持多种筛选项类型、校验、自定义样式等功能。
+tags: Vue,工程化,开源
 ---
 
 ## vue-filter-box 的诞生

@@ -211,11 +211,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    rgba(189, 52, 254, 0.35) 0%,
-    rgba(65, 209, 255, 0.35) 100%
-  );
+  background: rgba(52, 81, 178, 0.35);
   border-radius: 10px;
   border: 2px solid transparent;
   background-clip: padding-box;
@@ -223,60 +219,40 @@ main {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    rgba(189, 52, 254, 0.65) 0%,
-    rgba(65, 209, 255, 0.65) 100%
-  );
+  background: rgba(52, 81, 178, 0.65);
   background-clip: padding-box;
   transform: scaleY(1.05);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: linear-gradient(
-    180deg,
-    rgba(189, 52, 254, 0.85) 0%,
-    rgba(65, 209, 255, 0.85) 100%
-  );
+  background: rgba(52, 81, 178, 0.85);
   background-clip: padding-box;
 }
 
 /* Firefox 滚动条样式 */
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(189, 52, 254, 0.35) transparent;
+  scrollbar-color: rgba(52, 81, 178, 0.35) transparent;
 }
 
 /* 暗色模式下的滚动条 */
 .dark ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    180deg,
-    rgba(189, 52, 254, 0.45) 0%,
-    rgba(71, 202, 255, 0.45) 100%
-  );
+  background: rgba(168, 177, 255, 0.45);
   background-clip: padding-box;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(
-    180deg,
-    rgba(189, 52, 254, 0.75) 0%,
-    rgba(71, 202, 255, 0.75) 100%
-  );
+  background: rgba(168, 177, 255, 0.75);
   background-clip: padding-box;
 }
 
 .dark ::-webkit-scrollbar-thumb:active {
-  background: linear-gradient(
-    180deg,
-    rgba(189, 52, 254, 0.95) 0%,
-    rgba(71, 202, 255, 0.95) 100%
-  );
+  background: rgba(168, 177, 255, 0.95);
   background-clip: padding-box;
 }
 
 .dark * {
-  scrollbar-color: rgba(189, 52, 254, 0.45) transparent;
+  scrollbar-color: rgba(168, 177, 255, 0.45) transparent;
 }
 
 /* 代码块滚动条优化 */
@@ -295,4 +271,9 @@ div[class*="language-"] ::-webkit-scrollbar-thumb {
 .vp-code-group ::-webkit-scrollbar-thumb:hover,
 div[class*="language-"] ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.35);
+}
+
+.vp-doc h2 {
+  margin-top: 0;
+  border-top: none;
 }

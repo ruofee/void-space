@@ -1,7 +1,9 @@
 ---
 title: "Husky 和 Git Hooks"
 date: 2022/12/2
-banner: /imgs/code
+banner: /imgs/banner/banner16.png
+description: 深入解析 Husky 8.0 的实现原理,揭示如何通过 git config core.hooksPath 和 npm prepare 脚本实现 Git Hooks 的团队共享。对比新旧版本的不同实现思路。
+tags: Git,Husky
 ---
 
 > 注意，文章中使用的 Husky 版本为 8.0.2 版本
