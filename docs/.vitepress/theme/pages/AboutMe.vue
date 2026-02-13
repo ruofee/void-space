@@ -57,12 +57,12 @@ const toys = [
               <span>此前就职于</span>
               <div class="company">
                 <img src="../assets/icons/baidu.svg" alt="baidu" class="company-icon" />
-                <span>百度</span>
+                <span class="company-name">百度</span>
               </div>
               <span>，目前在职于</span>
               <div class="company">
                 <img src="../assets/icons/shopee.svg" alt="虾皮" class="company-icon" />
-                <span>虾皮</span>
+                <span class="company-name">虾皮</span>
               </div>
             </div>
             <p>喜欢编程 · 篮球 · 游戏 · 动漫</p>
@@ -274,6 +274,17 @@ const toys = [
   .about-me {
     .avatar {
       display: none;
+    }
+
+    .company {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: unset !important;
+      padding: 0 !important;
+
+      .company-name {
+        display: none;
+      }
     }
   }
 }

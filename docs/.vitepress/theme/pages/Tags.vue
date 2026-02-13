@@ -84,7 +84,7 @@ const tags = data?.tags || []
       max-width: 100%;
 
       .tags-list {
-        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 
         .tag {
           .count {

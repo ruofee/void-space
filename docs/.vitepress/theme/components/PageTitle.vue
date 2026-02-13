@@ -88,11 +88,13 @@ watch(() => props.title, () => {
     font-size: 40px;
     font-weight: 500;
     color: var(--vp-c-text-1);
+    line-height: 1.5;
   }
 
   .description {
     font-size: 16px;
     color: var(--vp-c-text-3);
+    line-height: 1.5;
   }
 
   .invisible {
