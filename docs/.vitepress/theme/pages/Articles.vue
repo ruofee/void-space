@@ -14,7 +14,7 @@ const articles = data?.articles || []
 <template>
   <div class="articles">
     <div class="articles-container">
-      <PageTitle title="Hi~ 我是 Ruofee" description="欲买桂花同载酒，终不似，少年游" />
+      <PageTitle title="Hi~ 我是 Ruofee" description="欲买桂花同载酒，终不似，少年游" typewriter />
       <div v-if="articles.length === 0" class="empty">
         暂无文章
       </div>

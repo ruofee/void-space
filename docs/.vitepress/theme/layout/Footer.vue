@@ -26,6 +26,7 @@
   align-items: center;
   height: 116px;
   border-top: 1px solid var(--vp-c-divider);
+  background-color: #fff;
 
   .footer-container {
     display: flex;

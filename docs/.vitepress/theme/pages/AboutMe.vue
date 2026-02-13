@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import PageTitle from '../components/PageTitle.vue'
 
+const info = {
+  name: 'Ruofee',
+  job: 'Web Development Engineer',
+};
+
 const toys = [
   {
     name: 'vue-ellipsis-component',
@@ -33,18 +38,34 @@ const toys = [
 <template>
   <div class="about-me">
     <div class="about-me-container">
-      <PageTitle title="关于我" />
+      <PageTitle title="关于我" description="因为生活不检点沾染上了中二病 (*￣︶￣)" typewriter />
 
       <div class="info">
         <img class="avatar" src="../assets/imgs/headImage.png" alt="">
 
         <div class="info-content">
-          <div class="name">Ruofee</div>
-          <div class="job">前端开发工程师 & 全职</div>
+          <div class="name">{{ info.name }}</div>
+
+          <div class="job">
+            <img src="../assets/icons/work.svg" alt="work" class="work-icon">
+            <span>{{ info.job }}</span>
+          </div>
+
           <div class="description">
-            <p>欢迎来到我的个人博客，我是 Ruofee，一位热爱编程的前端工程师，此前就职于百度，目前在职于 Shopee~</p>
-            <p>不知道分享的知识对你是否有帮助呢？</p>
-            <p>除了编程也会玩玩 lolm，switch games，也有点喜欢动漫 ^.^</p>
+            <p>欢迎光临我的博客，我是 Ruofee！</p>
+            <div class="description-item">
+              <span>此前就职于</span>
+              <div class="company">
+                <img src="../assets/icons/baidu.svg" alt="baidu" class="company-icon" />
+                <span>百度</span>
+              </div>
+              <span>，目前在职于</span>
+              <div class="company">
+                <img src="../assets/icons/shopee.svg" alt="虾皮" class="company-icon" />
+                <span>虾皮</span>
+              </div>
+            </div>
+            <p>喜欢编程 · 篮球 · 游戏 · 动漫</p>
           </div>
         </div>
       </div>
@@ -106,6 +127,7 @@ const toys = [
       width: 190px;
       height: 190px;
       object-fit: cover;
+      border-radius: 4px;
     }
 
     .info-content {
@@ -120,17 +142,47 @@ const toys = [
       }
 
       .job {
+        display: flex;
+        align-items: center;
+        gap: 12px;
         font-size: 16px;
         color: var(--vp-c-text-3);
+
+        .work-icon {
+          width: 18px;
+          height: 18px;
+        }
       }
 
       .description {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 6px;
         font-size: 16px;
         line-height: 1.5;
         color: var(--vp-c-text-1);
+
+        .description-item {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .company {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 2px 8px;
+            border-radius: 8px;
+            background-color: var(--vp-c-bg-soft);
+            font-size: 14px;
+            color: var(--vp-c-text-1);
+
+            .company-icon {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
       }
     }
   }
