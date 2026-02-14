@@ -104,6 +104,41 @@ tags: Vue,React,TypeScript
 | `pnpm docs:preview` | 预览已构建的站点 |
 | `pnpm preview` | 构建并预览（一键命令） |
 
+## 📋 Git Commit 规范
+
+本项目使用 [Commitlint](https://commitlint.js.org/) 规范，所有 commit 消息必须遵循 [Conventional Commits](https://www.conventionalcommits.org/) 格式：
+
+```
+<type>(<scope>): <subject>
+```
+
+### Type 类型
+
+- `feat`: 新功能
+- `fix`: 修复 bug
+- `docs`: 文档变更
+- `style`: 代码格式变更
+- `refactor`: 代码重构
+- `perf`: 性能优化
+- `test`: 测试相关
+- `build`: 构建系统变更
+- `ci`: CI 配置变更
+- `chore`: 其他变更
+
+### 示例
+
+```bash
+feat: add grid background pattern
+fix(article): resolve hydration mismatch in article list
+docs: update README with commit guidelines
+```
+
+详细规范请查看 [`.cursor/rules/commit-message.md`](.cursor/rules/commit-message.md)
+
+### Cursor AI 集成
+
+如果你使用 Cursor IDE，AI 会自动遵循 `.cursor/rules/` 中定义的规范。当你说"提交代码"时，Cursor 会自动生成符合规范的 commit message。
+
 ## 📄 License
 
 MIT

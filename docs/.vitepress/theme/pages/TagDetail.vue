@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useRoute } from 'vitepress'
-import { data as allArticlesData } from '../composables/tagArticles.data'
+import { data } from '../composables/articles.data'
 
 import ArticleCard from '../components/ArticleCard.vue'
 import PageTitle from '../components/PageTitle.vue'
@@ -19,9 +19,9 @@ const tagName = computed(() => {
 // 过滤出当前标签的文章
 const articles = computed(() => {
   const tag = tagName.value
-  if (!tag || !allArticlesData?.articles) return []
+  if (!tag || !data?.articles) return []
   
-  return allArticlesData.articles.filter(article => 
+  return data.articles.filter(article => 
     article.tags.includes(tag)
   )
 })

@@ -19,17 +19,17 @@ const articles = data?.articles || []
         暂无文章
       </div>
       <div v-else class="articles_list">
-        <ArticleCard
-          v-for="article in articles"
-          :key="article.url"
-          :title="article.title"
-          :url="article.url"
-          :date="article.date"
-          :banner="article.banner"
-          :description="article.description"
-          :reading-time="article.readingTime"
-          :tags="article.tags"
-        />
+        <div v-for="article in articles" :key="article.url">
+          <ArticleCard
+            :title="article.title"
+            :url="article.url"
+            :date="article.date"
+            :banner="article.banner"
+            :description="article.description"
+            :reading-time="article.readingTime"
+            :tags="article.tags"
+          />
+        </div>
       </div>
     </div>
   </div>
