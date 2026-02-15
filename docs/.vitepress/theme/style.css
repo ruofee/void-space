@@ -277,3 +277,13 @@ div[class*="language-"] ::-webkit-scrollbar-thumb:hover {
   margin-top: 0;
   border-top: none;
 }
+
+html {
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
+}

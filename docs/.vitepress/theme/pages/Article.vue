@@ -58,7 +58,7 @@ const article = computed(() => {
       gap: 28px;
 
       .title {
-        font-size: 35px;
+        font-size: 2.2rem;
         font-weight: 500;
         color: var(--vp-c-text-1);
       }
@@ -89,11 +89,6 @@ const article = computed(() => {
   .article {
     .article-container {
       max-width: 100%;
-      // .article-header {
-      //   .title {
-      //     font-size: 24px;
-      //   }
-      // }
       .banner {
         width: 100%;
       }

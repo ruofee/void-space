@@ -24,7 +24,7 @@ const props = defineProps<{
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 14px;
+  font-size: 0.8rem;
 
   .icon {
     width: 14px;

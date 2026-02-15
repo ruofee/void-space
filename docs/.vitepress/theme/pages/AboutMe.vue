@@ -136,7 +136,7 @@ const toys = [
       gap: 16px;
 
       .name {
-        font-size: 28px;
+        font-size: 2.8rem;
         font-weight: 600;
         color: var(--vp-c-text-1);
       }
@@ -145,7 +145,7 @@ const toys = [
         display: flex;
         align-items: center;
         gap: 12px;
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--vp-c-text-3);
 
         .work-icon {
@@ -158,7 +158,7 @@ const toys = [
         display: flex;
         flex-direction: column;
         gap: 6px;
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.5;
         color: var(--vp-c-text-1);
 
@@ -174,7 +174,7 @@ const toys = [
             padding: 2px 8px;
             border-radius: 8px;
             background-color: var(--vp-c-bg-soft);
-            font-size: 14px;
+            font-size: 0.8rem;
             color: var(--vp-c-text-1);
 
             .company-icon {
@@ -193,13 +193,13 @@ const toys = [
     gap: 16px;
 
     .contacts-title {
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 600;
       color: var(--vp-c-text-1);
     }
 
     .contacts-description {
-      font-size: 16px;
+      font-size: 1rem;
       color: var(--vp-c-text-3);
     }
 
@@ -214,7 +214,7 @@ const toys = [
       gap: 16px;
 
       .contact-name {
-        font-size: 16px;
+        font-size: 1rem;
 
         .contact-icon {
           width: 20px;
@@ -230,13 +230,13 @@ const toys = [
     gap: 16px;
 
     .toys-title {
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 600;
       color: var(--vp-c-text-1);
     }
 
     .toys-description {
-      font-size: 16px;
+      font-size: 1rem;
       color: var(--vp-c-text-3);
     }
 
@@ -252,12 +252,12 @@ const toys = [
       gap: 4px;
 
       .toy-name {
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--vp-c-brand-1);
       }
 
       .toy-description {
-        font-size: 14px;
+        font-size: 0.8rem;
         color: var(--vp-c-text-1);
       }
     }

@@ -64,13 +64,13 @@ const tags = data?.tags || []
         height: 50px;
 
         .name {
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: 500;
           color: var(--vp-c-text-1);
         }
 
         .count {
-          font-size: 12px;
+          font-size: 0.8rem;
           color: var(--vp-c-text-3);
         }
       }

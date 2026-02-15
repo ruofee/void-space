@@ -70,14 +70,14 @@ const handleImageError = (e: Event) => {
     row-gap: 16px;
 
     .title {
-      font-size: 26px;
+      font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.5;
       color: var(--vp-c-text-1);
     }
 
     .description {
-      font-size: 14px;
+      font-size: 0.8rem;
       color: var(--vp-c-text-3);
     }
 
@@ -86,7 +86,7 @@ const handleImageError = (e: Event) => {
       align-items: center;
       column-gap: 16px;
       color: var(--vp-c-text-3);
-      font-size: 14px;
+      font-size: 0.8rem;
 
       .date {
         display: flex;

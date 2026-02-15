@@ -85,14 +85,14 @@ watch(() => props.title, () => {
   gap: 20px;
 
   .title {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     color: var(--vp-c-text-1);
     line-height: 1.5;
   }
 
   .description {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--vp-c-text-3);
     line-height: 1.5;
   }

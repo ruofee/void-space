@@ -15,13 +15,13 @@ const props = defineProps<{
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 14px;
+  font-size: 0.8rem;
 
   .tag {
     padding: 2px 8px;
     border-radius: 4px;
     background-color: var(--vp-c-bg-soft);
-    font-size: 12px;
+    font-size: 0.8rem;
   }
 }
 </style>

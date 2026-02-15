@@ -37,7 +37,7 @@
     max-width: 1200px;
 
     .footer-left {
-      font-size: 14px;
+      font-size: 0.8rem;
       color: var(--vp-c-text-3);
     }
 

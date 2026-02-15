@@ -73,7 +73,7 @@ const articles = computed(() => {
 .empty {
   margin-top: 64px;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--vp-c-text-3);
 }
 

@@ -68,7 +68,7 @@ const activePath = computed(() => route.path)
       }
 
       .logo-text {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         color: var(--vp-c-text-1);
       }
@@ -80,7 +80,7 @@ const activePath = computed(() => route.path)
       gap: 30px;
 
       .link {
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: 500;
         color: var(--vp-c-text-2);
         text-decoration: none;
