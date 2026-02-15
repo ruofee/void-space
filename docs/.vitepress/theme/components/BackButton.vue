@@ -17,7 +17,7 @@ defineProps<{
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--vp-c-text-1);
   text-decoration: none;
