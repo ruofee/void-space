@@ -34,7 +34,6 @@ const tags = data?.tags || []
 .tags-container {
   width: 100%;
   max-width: 1000px;
-  padding: 32px 32px 120px 32px;
 
   .tags-list {
     display: grid;

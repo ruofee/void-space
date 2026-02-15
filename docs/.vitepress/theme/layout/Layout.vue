@@ -54,6 +54,8 @@ const isTagDetailPage = computed(() => {
 @media (max-width: 768px) {
   .content-wrapper {
     .content {
+      padding-left: 20px;
+      padding-right: 20px;
       max-width: 100%;
     }
   }

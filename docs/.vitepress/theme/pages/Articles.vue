@@ -44,7 +44,6 @@ const articles = data?.articles || []
 .articles-container {
   width: 100%;
   max-width: 800px;
-  padding: 32px;
 }
 
 .articles_list {
@@ -53,5 +52,4 @@ const articles = data?.articles || []
   row-gap: 100px;
   margin-top: 64px;
 }
-
 </style>
