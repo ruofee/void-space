@@ -1,12 +1,15 @@
 {
   "devDependencies": {
+    "file-type": "^21.3.0",
     "sass-embedded": "^1.97.3",
+    "sharp": "^0.34.5",
     "vitepress": "2.0.0-alpha.16"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "preview": "pnpm docs:build && pnpm docs:preview"
+    "preview": "pnpm docs:build && pnpm docs:preview",
+    "compress": "node scripts/compress-images.mjs"
   }
 }
