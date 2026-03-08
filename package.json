@@ -10,6 +10,7 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "preview": "pnpm docs:build && pnpm docs:preview",
-    "compress": "node scripts/compress-images.mjs"
+    "compress": "node scripts/compress-images.mjs",
+    "new": "node scripts/new-article.mjs"
   }
 }

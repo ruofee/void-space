@@ -10,8 +10,9 @@ import Article from '../pages/Article.vue'
 import Tags from '../pages/Tags.vue'
 import TagDetail from '../pages/TagDetail.vue'
 import AboutMe from '../pages/AboutMe.vue'
+import NotFound from '../pages/NotFound.vue'
 
-const { frontmatter } = useData()
+const { frontmatter, page } = useData()
 const route = useRoute()
 
 // 根据路由判断是否是标签详情页
@@ -29,6 +30,7 @@ const isTagDetailPage = computed(() => {
         <Tags v-else-if="frontmatter.layout === 'tags'" />
         <TagDetail v-else-if="isTagDetailPage" />
         <AboutMe v-else-if="frontmatter.layout === 'about'" />
+        <NotFound v-else-if="page.isNotFound" />
         <Article v-else />
       </div>
     </div>

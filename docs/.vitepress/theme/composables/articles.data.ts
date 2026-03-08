@@ -24,6 +24,7 @@ export default createContentLoader('article/*.md', {
   render: true,
   transform(rawData) {
     const articles = rawData
+      .filter(({ frontmatter }) => process.env.NODE_ENV !== 'production' || !frontmatter.draft)
       .map(({ url, frontmatter, excerpt, html }) => ({
         title: frontmatter.title || 'Untitled',
         url,
