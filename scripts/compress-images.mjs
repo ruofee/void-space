@@ -75,7 +75,22 @@ async function compressFile(filePath) {
   return { filePath, before: fileInfo.size, after: outputBuffer.length, saved, ratio }
 }
 
-async function main() {
+async function compressSingle(filePath) {
+  console.log(`\n🔍 Compressing: ${filePath}\n`)
+
+  const result = await compressFile(filePath)
+  if (!result) {
+    console.log('  ⏭  Skipped (unsupported format or too small)')
+    return
+  }
+  if (result.skipped) {
+    console.log('  ⏭  Already optimized')
+    return
+  }
+  console.log(`  ✅ ${formatSize(result.before)} → ${formatSize(result.after)} (-${result.ratio}%)`)
+}
+
+async function compressAll() {
   console.log(`\n🔍 Scanning: ${IMGS_DIR}\n`)
 
   const files = await getAllFiles(IMGS_DIR)
@@ -118,4 +133,5 @@ async function main() {
   console.log()
 }
 
-main().catch(console.error)
+const target = process.argv[2]
+;(target ? compressSingle(target) : compressAll()).catch(console.error)
