@@ -2,17 +2,17 @@
 title: "Vue 3.x 模板编译优化"
 date: 2026/3/8
 banner: /imgs/banner/banner20.png
-description: 深入解析 Vue 3 相比 Vue 2 在渲染性能上的质变原因。通过对“静态提升”、“更新类型标记（Patch Flag）”以及“树结构打平（Block）”三大核心编译优化技术的对比与源码分析，揭示 Vue 3 如何通过“动静分离”实现极速的 Diff 性能。
+description: 深入解析 Vue 3 相比 Vue 2 在渲染性能上的质变原因。通过对“缓存静态内容”、“更新类型标记（Patch Flag）”以及“树结构打平（Block）”三大核心编译优化技术的对比与源码分析，揭示 Vue 3 如何通过“动静分离”实现极速的 Diff 性能。
 tags: vue,源码分析
 ---
 
 Vue 3.x 虽然可以使用 JSX 或是 Render 函数进行渲染，但官方更推荐使用 Template，除了 Template 更直观之外，其实有个非常重要的原因：Vue 3.x 在模板编译上做了很多优化，因此对比 JSX 或是 Render 函数，Template 的性能更为优秀，其中三个主要的优化点分别是：
 
-1. 静态提升
+1. 缓存静态内容
 2. 更新类型标记
 3. 树结构打平
 
-## 静态提升
+## 缓存静态内容
 
 ```vue {2-3}
 <div>
@@ -299,4 +299,4 @@ export function openBlock(disableTracking = false): void {
 
 ## 总结
 
-以上便是 Vue 3.x 中模板编译优化的一些关键点，包括静态提升、Patch Flag 机制和 Block Tree（树结构打平）优化，这些优化都旨在提升 Vue 应用的渲染性能。
+以上便是 Vue 3.x 中模板编译优化的一些关键点，包括缓存静态内容、Patch Flag 机制和 Block Tree（树结构打平）优化，这些优化都旨在提升 Vue 应用的渲染性能。
